@@ -1,0 +1,154 @@
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary-color: #B7663C;
+    --secondary-color: #F8F8F8;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* Global */
+.tag-btn {
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: .5rem 1rem;
+    background-color:  #A7BEEC;
+}
+
+.tag-btn:hover {
+    opacity: .9;
+}
+
+/* Start Recent Section */
+.recent-blog-section,
+.others-blogs-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 8rem auto;
+}
+
+.recent-blog-section h2 {
+    margin-bottom: 3rem;
+}
+
+.main-recent-post {
+    height: auto;
+}
+
+.main-recent-post .post-img {
+    width: 35%;
+    position: relative;
+}
+
+.img-tag-btn {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.main-recent-post .post-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-recent-post .main-post {
+    width: 70%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.main-post h3 {
+    margin-bottom: 2rem;
+}
+
+.main-post p {
+    line-height: 1.7em;
+}
+
+.tag-btns a {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.col-2 h5 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* End Recent Section */
+
+
+/* Start Others Blogs Section */
+
+.others-blogs-section h2 {
+    margin-bottom: 5rem;
+}
+
+.post .img-content {
+    height: 45rem;
+    position: relative;
+}
+
+.post .inner-content {
+    position: absolute;
+    width: 22.8rem;
+    right: 4rem;
+    bottom: -4rem;
+    padding: 2.5rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post .inner-content strong {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.post .about-post {
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.post-btn {
+    display: block;
+    text-align: center;
+    width: 18rem;
+    padding: .7rem 0;
+    border: .2rem solid var(--black-color);
+    background-color: var(--white-color);
+    font-size: var(--fs-extra);
+    font-weight: var(--fw-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: auto;
+    transition: all 300ms ease-in-out;
+}
+
+.post-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+    cursor: pointer;
+    border: .2rem solid var(--primary-color);
+}
+
+
+
+/* End Others Blogs Section */
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .main-recent-post .post-img {
+        width: 100%;
+        height: 30rem;
+    }
+    
+    .main-recent-post .main-post {
+        width: 100%;
+    }
+}
